@@ -1,0 +1,215 @@
+/* simple reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* ========== */
+/* = Layout = */
+/* ========== */
+body{
+	background: #1d425d;
+	color: #222;
+	font-family: Arial, sans; /* Century Gothic, Arial, sans-serif; */
+	font-size: 14px;
+}
+h1{
+	font-size: 22px;
+	margin-bottom: 6px;
+}
+h2{
+	font-size: 18px;
+	margin: 12px 0 8px 0;
+}
+a{
+	text-decoration: none;
+	color: #1D425D;
+}
+a:hover{
+	text-decoration: underline;
+}
+p{
+	margin: 7px 0 9px 0;
+}
+ul{
+	padding-left: 20px;
+
+}
+b{
+	font-weight: bold;
+}
+.code{
+	font-weight: bold;
+	font-family: courier, mono;
+}
+.flowleft{ 
+	float:left; 
+	margin-right: 10px; 
+}
+.content_item{
+	float: left;
+	width: 100%;
+	margin: 10px 0;
+}
+.content_item h2{
+	margin-top: 0;
+}
+#nav{
+	width: 230px;
+	height: 610px;
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 65px;
+	background: transparent url("images/nav.png");
+	z-index: 100;
+}
+
+.content_page{
+	width: 600px;
+	min-height: 403px;
+	-webkit-transform-origin-y: 100%; /*635px;*/
+	-moz-transform-origin-y: 100%; 
+	background: url("images/mainTile.png");
+	position: absolute;
+	top: 252px;
+	left: 40%;
+	-webkit-transform: rotate(180deg);
+	-webkit-transition: all 0.8s ease-in-out;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform-origin: 50% 100%;
+	
+	-moz-transform: rotate(180deg);
+	-moz-transition: all 0.8s ease-in-out;
+	-moz-backface-visibility: hidden;
+	-moz-transform-origin: 50% 100%;
+	
+	z-index: 9;
+	padding-bottom: 300px;
+	border-radius: 0 0 300px 300px;
+}
+.blade_top{
+	width: 600px;
+	height: 232px;
+	position: absolute;
+	top: -232px;
+	left: 0;
+	z-index: 10;
+	background: transparent url("images/mainTop.png");
+}
+.content{
+	position: absolute;
+	top: -158px; 
+	left: 0px;
+	z-index: 11;	
+	padding: 0px 15px;
+}	
+#websites_page img.flowleft{
+	border: 2px #999 solid;
+}
+#content_container{
+	width: 100%;
+	height: 655px;
+	position: absolute;
+	display: block;
+	overflow: hidden;
+	z-index: 10;
+	background: wheat url("images/bg.jpg");
+	-webkit-transition: all 0.8s ease-in-out;
+	-webkit-backface-visibility: hidden;
+	
+	-moz-transition: all 0.8s ease-in-out;
+	-moz-backface-visibility: hidden;
+}
+#footer{
+	width: 100%;
+	height: 80px;
+	top: 655px;
+	display: block;
+	background: #5A798E url("images/footer.jpg");
+	position: absolute;
+	left: 0;
+	right: 0;
+	-webkit-transition: all 0.8s ease-in-out;
+	-webkit-backface-visibility: hidden;
+	
+	-moz-transition: all 0.8s ease-in-out;
+	-moz-backface-visibility: hidden;
+}
+
+#nav a {
+	display: block;
+	width: 152px;
+	height: 18px;
+	box-shadow: inset 3px 3px 13px #444;
+	color: #1D425D;
+	margin-left: 30px;
+	border-radius: 7px;
+	padding: 10px;
+	font-size: 16px;
+	margin-bottom: 8px;
+	font-family: arial;
+	font-weight: bold;
+}
+#nav #logo_spacer{
+	display: block;
+	width: 100%;
+	background: transparent;
+	height: 100px;
+}
+#browser_critique{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 1000;
+	background: rgba(0, 0, 0, .6);	
+	display: none;
+}
+#browser_critique_content{
+	position: relative;
+	margin: 170px auto;
+	background: white;
+	display: block;
+	width: 600px;
+	height: 260px;	
+	padding: 20px;
+}
+#browser_choices{
+	display: block;
+	float: left;
+	margin-left: 95px;
+	margin-top: 25px;
+}
+#browser_choices a{
+	height: 120px;
+	display: block;
+	width: 110px;
+	clear: none;
+	margin: 0 35px 0 0;
+	float: left;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+}
+#browser_critique .dismissal{
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+}
